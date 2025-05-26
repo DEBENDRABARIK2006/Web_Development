@@ -1,0 +1,152 @@
+/* 1) Global Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F7FA;    /* Light grey background */
+  color: #333333;               /* Dark grey body text */
+  font-family: Arial, sans-serif;
+}
+
+/* 2) Navbar */
+.top {
+  height: 80px;
+  width: 100vw;
+  background-color: #1A1A2E;    /* Dark navy blue */
+  color: #FFFFFF;               /* White navbar text */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+.deb ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFFFFF;               /* White links */
+  transition: color .3s, transform .2s, border .2s;
+}
+
+ul li a:hover,
+ul li a.active {
+  color: #00ADB5;               /* Accent color */
+  border-bottom: 2px solid #00ADB5;
+  transform: scale(1.05);
+}
+
+/* 3) Headings */
+.heading,
+.heading h1,
+.heading h2,
+.intro h4 {
+  color: #0F3460;               /* Deep blue headings */
+}
+
+/* 4) Boxes / Cards */
+.ab,
+.information,
+.information1 .information {
+  background-color: #FFFFFF;    /* White box background */
+  border: 1px solid #DADADA;    /* Light border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 10px;
+}
+
+.ab {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.information {
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  transition: transform .2s;
+}
+
+.information:hover {
+  transform: scale(1.05);
+}
+
+/* 5) Profile Images (with shadow) */
+.photo,
+.photo1,
+.photo2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Profile card shadow */
+}
+
+/* 6) Main Section & Background Images */
+.middle,
+.main {
+  min-height: 80vh;
+  width: 100vw;
+  background-image: url("bimg1.avif");
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;               /* White overlay text */
+  text-align: center;
+  padding: 40px;
+}
+
+.middle2 {
+  text-align: center;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+/* 7) Navigation Buttons */
+.move {
+  background-color: #1A1A2E;    /* Dark navy */
+  color: #FFFFFF;               /* White text */
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+  min-width: 160px;
+  transition: transform .2s, background .3s;
+}
+
+.move a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.move:hover {
+  background-color: #00ADB5;    /* Accent on hover */
+  transform: scale(1.05);
+}
+
+/* 8) Responsive Typography */
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+  .photo {
+    width: 100px;
+    height: 100px;
+  }
+}
